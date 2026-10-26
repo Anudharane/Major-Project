@@ -1,0 +1,28 @@
+=== DATASET REPORT ===
+
+Image counts (total 12900):
+class       normal  myopia  hyperopia
+split                                
+train         3100    3100       3100
+validation     450     450        450
+test           750     750        750
+
+Unreadable/corrupted images: 0
+Image sizes (HxW): {(224, 224): 12900}
+Exact duplicate groups: 0  (spanning splits: 0)
+
+Identity / near-duplicate leakage (Pearson corr of 32x32 grayscale > 0.99):
+  validation :  77.8% of images (1050/1350) have a near-copy in TRAIN
+  test       :  62.8% of images (1414/2250) have a near-copy in TRAIN
+  train      :  58.3% of images (5419/9300) have a near-copy in VALIDATION/TEST
+  clean TEST subset (no near-copy in train): 836 images -> evaluate.py reports metrics on it as well
+  within TRAIN (first 2000 imgs): 73.2% have another train image with corr > 0.99
+  => train/val/test were NOT built from independent subjects. A high test accuracy on the full test set
+     partly measures memorisation of shared eye identities, not generalisation to new people.
+
+Mean brightness per class (first 300 train images each):
+  normal      120.8
+  myopia      123.0
+  hyperopia   111.2
+
+NOTE: folder labels are NOT clinically verified. Inspect samples visually; see README 'Limitations'.

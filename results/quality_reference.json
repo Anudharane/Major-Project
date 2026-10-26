@@ -1,0 +1,10 @@
+{
+  "focal_sharpness_percentiles": {
+    "0.5": 1.6159119897959184,
+    "1": 1.6159119897959184,
+    "5": 1.6159119897959184,
+    "50": 480.6729312818877,
+    "95": 19073.189086773895
+  },
+  "note": "Compare with config.MIN_SHARPNESS / BRIGHTNESS_RANGE / MIN_CONTRAST."
+}

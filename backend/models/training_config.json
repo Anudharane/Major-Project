@@ -1,0 +1,23 @@
+{
+  "model": "ResNet-18 (ImageNet pretrained, transfer learning) + Handcrafted Feature Fusion",
+  "deep_features": 512,
+  "handcrafted_features": 4,
+  "total_features": 516,
+  "handcrafted_names": [
+    "focal_sharpness",
+    "meridional_asymmetry",
+    "pupil_contrast_ratio",
+    "reflex_symmetry"
+  ],
+  "device": "cpu",
+  "epochs_run": 24,
+  "best_epoch": 14,
+  "best_val_loss": 0.0012122384741352292,
+  "best_val_acc": 1.0,
+  "test_accuracy": 1.0,
+  "train_images": 6300,
+  "validation_images": 1350,
+  "test_images": 1350,
+  "total_images": 9000,
+  "training_minutes": 0.15
+}
